@@ -1,5 +1,21 @@
-# Ai Assistant Page
+# AI 知识助手单页演示
 
-Single-page AI assistant demo.
+这是一个单页 AI 知识助手前端示例，页面包含资料上传、问题输入、聊天记录和回答展示区域，适合用来演示“上传资料后进行问答”的产品原型。
 
-Imported from a local project and cleaned for GitHub publication.
+## 功能亮点
+
+- 支持选择 PDF、PPTX、DOCX 文档并提交到后端上传接口。
+- 提供聊天式问答区域，用户可以输入问题并查看助手回复。
+- 预留参考资料展示位置，方便后续接入知识库检索结果。
+- 采用纯 HTML、CSS 和 JavaScript 编写，便于直接阅读和二次修改。
+
+## 文件说明
+
+- `index.html`：完整的页面结构、样式和交互逻辑。
+
+## 本地预览
+
+可以直接在浏览器打开 `index.html` 查看页面。如果要让上传和问答真正生效，需要准备后端接口：
+
+- `POST /upload`：接收上传文档。
+- `POST /ask`：接收问题并返回回答。
